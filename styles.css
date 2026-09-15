@@ -240,7 +240,7 @@ a { color: inherit; text-decoration: none; }
 
 .research-image.zoom-out-image img {
   object-fit: contain;
-  padding: 1.25rem;
+  padding: 0.9rem;
   background: #f8fbff;
 }
 
