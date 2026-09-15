@@ -211,48 +211,26 @@ a { color: inherit; text-decoration: none; }
 .research-image,
 .project-image {
   width: 100%;
-  background: #e8eef5;
+  aspect-ratio: 16 / 9;
+  background: #f8fbff;
   overflow: hidden;
   flex: 0 0 auto;
-}
-
-/* Compact research thumbnails: two research cards fit comfortably per row. */
-.research-image {
-  height: 210px;
-}
-
-.project-image {
-  aspect-ratio: 16 / 10;
-}
-
-.research-image img,
-.project-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.research-image.contain-image img {
-  object-fit: contain;
-  padding: 1.25rem;
-  background: white;
-}
-
-.research-image.zoom-out-image {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.7rem;
-  background: #f3f6fa;
 }
 
+/* Maximize each image while keeping the entire picture visible. */
+.research-image img,
+.project-image img,
+.research-image.contain-image img,
 .research-image.zoom-out-image img {
-  width: auto;
-  height: auto;
-  max-width: 92%;
-  max-height: 94%;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
-  border-radius: 12px;
+  padding: 0.35rem;
+  background: #f8fbff;
+  border-radius: 0;
 }
 
 .research-content,
@@ -420,9 +398,6 @@ a { color: inherit; text-decoration: none; }
     grid-template-columns: 1fr;
   }
 
-  .research-image {
-    height: 200px;
-  }
 }
 
 @media (max-width: 760px) {
