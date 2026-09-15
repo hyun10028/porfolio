@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Seokhyun (Paul) Kim — robotics researcher working on legged locomotion, small-scale robots, proprioceptive sensing, and bio-inspired control." />
+  <title>Seokhyun (Paul) Kim | Robotics Researcher</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top">SK</a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">ROBOTICS · BIO-INSPIRED CONTROL · SMALL-SCALE SYSTEMS</p>
+          <h1>Seokhyun <span>(Paul)</span> Kim</h1>
+          <p class="hero-copy">
+            Robotics researcher focused on legged locomotion, current-based proprioception,
+            decentralized control, and bio-inspired robots that can move robustly in constrained environments.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">View projects</a>
+            <a class="btn ghost" href="#contact">Contact me</a>
+          </div>
+          <div class="hero-meta">
+            <span>Carnegie Mellon University</span>
+            <span>Mechanical Engineering</span>
+            <span>Pittsburgh, PA</span>
+          </div>
+        </div>
+
+        <div class="hero-card" aria-label="Research focus summary">
+          <div class="hero-orbit orbit-1"></div>
+          <div class="hero-orbit orbit-2"></div>
+          <div class="robot-mark">4×</div>
+          <p>Independent leg actuation</p>
+          <div class="hero-stat-row">
+            <div><strong>33 g</strong><span>small quadruped</span></div>
+            <div><strong>&gt;90%</strong><span>stance/swing classification</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container two-col">
+        <div>
+          <p class="section-kicker">About</p>
+          <h2>I build robots that use simple hardware and intelligent feedback to move effectively.</h2>
+        </div>
+        <div class="prose">
+          <p>
+            I am a graduate researcher in Mechanical Engineering at Carnegie Mellon University.
+            My work sits at the intersection of locomotion, sensing, control, and robot design,
+            with a particular interest in biologically inspired coordination strategies for legged and articulated robots.
+          </p>
+          <p>
+            I am especially interested in systems where sensing and actuation are tightly constrained.
+            Recent work explores using motor current as a source of proprioceptive information for centimeter-scale quadrupeds,
+            reducing dependence on joint encoders and dedicated contact sensors.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="research" class="section alt">
+      <div class="container">
+        <p class="section-kicker">Research directions</p>
+        <h2>What I work on</h2>
+        <div class="cards three">
+          <article class="card">
+            <span class="card-index">01</span>
+            <h3>Legged locomotion</h3>
+            <p>Closed-loop gait coordination, phase regulation, touchdown/liftoff events, and robust locomotion under disturbances.</p>
+          </article>
+          <article class="card">
+            <span class="card-index">02</span>
+            <h3>Bio-inspired control</h3>
+            <p>Decentralized coordination, oscillatory control, body–limb interaction, and animal-inspired strategies for whole-body motion.</p>
+          </article>
+          <article class="card">
+            <span class="card-index">03</span>
+            <h3>Small-scale robotics</h3>
+            <p>Designing sensing, actuation, electronics, and control around strict mass, volume, power, and computational constraints.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">Selected projects</p>
+            <h2>Robots & research</h2>
+          </div>
+          <p class="section-note">Replace the gray project panels with your own photos, CAD renders, videos, or paper figures.</p>
+        </div>
+
+        <article class="project featured">
+          <div class="project-visual lilquad">
+            <div class="visual-label">LIL-QUAD</div>
+            <div class="quad-body"></div>
+            <span class="leg l1"></span><span class="leg l2"></span><span class="leg l3"></span><span class="leg l4"></span>
+          </div>
+          <div class="project-content">
+            <p class="project-type">Current-based proprioception · Small-scale locomotion</p>
+            <h3>Lil-Quad: Encoder-free leg-state estimation for a 33 g quadruped</h3>
+            <p>
+              A fully untethered centimeter-scale quadruped with four independently actuated rotary legs,
+              onboard computation, IMU sensing, and per-motor current measurement. A neural-network classifier
+              estimates stance and swing from current signals, providing contact events for closed-loop gait coordination.
+            </p>
+            <div class="tags">
+              <span>Embedded systems</span><span>Neural networks</span><span>Motor current sensing</span><span>MuJoCo</span><span>Control</span>
+            </div>
+            <div class="project-metrics">
+              <div><strong>33 g</strong><span>mass</span></div>
+              <div><strong>4</strong><span>independent legs</span></div>
+              <div><strong>&gt;90%</strong><span>state-classification accuracy</span></div>
+            </div>
+          </div>
+        </article>
+
+        <div class="project-grid">
+          <article class="project compact">
+            <div class="project-visual cat"><div class="visual-label">MEOW-MENTUM</div><div class="cat-mark">↻</div></div>
+            <div class="project-content">
+              <p class="project-type">Aerial self-righting · Bio-inspired robotics</p>
+              <h3>Meow-Mentum</h3>
+              <p>A cat-inspired robot combining an actuated 2-DoF spine and actuated tail for closed-loop aerial self-righting.</p>
+              <div class="tags"><span>Reinforcement learning</span><span>MuJoCo</span><span>Mechanical design</span></div>
+            </div>
+          </article>
+
+          <article class="project compact">
+            <div class="project-visual snake"><div class="visual-label">HUMRS</div><div class="snake-line">∿∿∿</div></div>
+            <div class="project-content">
+              <p class="project-type">Underwater robotics · State estimation</p>
+              <h3>HUMRS underwater snake robot</h3>
+              <p>Research on an articulated underwater robot using ROS and vision-based state estimation, with mechanical design considerations for waterproof operation.</p>
+              <div class="tags"><span>ROS</span><span>VINS-Fusion</span><span>Waterproof design</span></div>
+            </div>
+          </article>
+
+          <article class="project compact">
+            <div class="project-visual gait"><div class="visual-label">QUADRUPED LOCOMOTION</div><div class="gait-dots"><i></i><i></i><i></i><i></i></div></div>
+            <div class="project-content">
+              <p class="project-type">Decentralized coordination · Animal-inspired control</p>
+              <h3>Whole-body quadruped coordination</h3>
+              <p>Research on emergent inter-limb coordination and trunk–limb interactions without prescribing complete foot trajectories.</p>
+              <div class="tags"><span>CPG</span><span>GRF feedback</span><span>Whole-body coordination</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section alt">
+      <div class="container">
+        <p class="section-kicker">Skills</p>
+        <h2>Technical toolkit</h2>
+        <div class="skill-grid">
+          <div><h3>Robotics & Control</h3><p>Legged locomotion, feedback control, decentralized control, state estimation, system modeling</p></div>
+          <div><h3>Software</h3><p>Python, MATLAB, C/C++, ROS, MuJoCo, machine-learning training and deployment</p></div>
+          <div><h3>Perception</h3><p>VINS-Fusion, IMU-based sensing, current-based proprioception, vision-based state estimation</p></div>
+          <div><h3>Hardware</h3><p>CAD, 3D printing, PCB integration, embedded systems, motor drivers, sensor integration</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <div class="container two-col">
+        <div>
+          <p class="section-kicker">Education</p>
+          <h2>Academic background</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="timeline-year">2025–present</span>
+            <h3>Carnegie Mellon University</h3>
+            <p>M.S. student, Mechanical Engineering</p>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-year">2021–2025</span>
+            <h3>Tohoku University</h3>
+            <p>B.Eng., Electrical, Information and Physics Engineering</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container contact-card">
+        <div>
+          <p class="section-kicker">Contact</p>
+          <h2>Interested in robotics, locomotion, or research collaboration?</h2>
+          <p>Add your email, GitHub, Google Scholar, and LinkedIn links below.</p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:YOUR_EMAIL_HERE">Email ↗</a>
+          <a href="#" aria-label="GitHub placeholder">GitHub ↗</a>
+          <a href="#" aria-label="Google Scholar placeholder">Google Scholar ↗</a>
+          <a href="#" aria-label="LinkedIn placeholder">LinkedIn ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-wrap">
+      <span>© <span id="year"></span> Seokhyun (Paul) Kim</span>
+      <span>Built as a lightweight static portfolio.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
