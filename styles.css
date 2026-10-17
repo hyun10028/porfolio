@@ -130,7 +130,7 @@ a { color: inherit; text-decoration: none; }
 
 .profile-photo {
   width: min(100%, 390px);
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 4 / 5;
   justify-self: end;
   border: 1px solid var(--line);
   border-radius: var(--radius);
