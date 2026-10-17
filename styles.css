@@ -129,7 +129,7 @@ a { color: inherit; text-decoration: none; }
 }
 
 .profile-photo {
-  width: min(100%, 390px);
+  width: min(100%, 300px);
   aspect-ratio: 4 / 5;
   justify-self: end;
   border: 1px solid var(--line);
@@ -386,7 +386,7 @@ a { color: inherit; text-decoration: none; }
 
   .profile-photo {
     justify-self: start;
-    width: min(100%, 360px);
+    width: min(100%, 280px);
   }
 
   .section-head {
